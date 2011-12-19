@@ -1,0 +1,1 @@
+Supermarkets often have strange sales and conditional prices that make finding a price total challenging. This is a command line app that pulls together a random selection of fruits in a shopping cart and determines the price based upon the variable pricing of different combinations of fruit.
