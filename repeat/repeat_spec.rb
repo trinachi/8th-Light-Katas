@@ -20,7 +20,11 @@ describe "does_not_repeat" do
     does_not_repeat([1,2,1,2]).should be_false
   end
   
-  it "is true if if items don't repeat in the same way"do
+  it "is true if items don't repeat in the same way"do
     does_not_repeat([1,2,2,1]).should be_true
+  end
+  
+  it "is false if two unique items repeat twice" do
+    does_not_repeat([1,2,1,2,1,2]).should be_false
   end
 end
