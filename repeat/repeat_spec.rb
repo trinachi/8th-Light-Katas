@@ -24,7 +24,7 @@ describe "does_not_repeat" do
     does_not_repeat([1,2,2,1]).should be_true
   end
   
-  it "is false if two unique items repeat twice" do
+  it "is false if two unique items repeat three times" do
     does_not_repeat([1,2,1,2,1,2]).should be_false
   end
   
@@ -34,5 +34,9 @@ describe "does_not_repeat" do
   
   it "is true if the substrings aren't a perfect match" do
     does_not_repeat([1,2,3,1,2,2]).should be_true
+  end
+  
+  it "is false if two unique items repeat five times" do
+    does_not_repeat([1,2,1,2,1,2,1,2,1,2]).should be_false
   end
 end
