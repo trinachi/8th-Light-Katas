@@ -39,4 +39,8 @@ describe "does_not_repeat" do
   it "is false if two unique items repeat five times" do
     does_not_repeat([1,2,1,2,1,2,1,2,1,2]).should be_false
   end
+  
+  it "is true if one of the fifths is different" do
+    does_not_repeat([1,2,1,2,1,2,1,2,1,3]).should be_true
+  end
 end
